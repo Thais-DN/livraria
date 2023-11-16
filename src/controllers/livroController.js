@@ -30,7 +30,7 @@ class LivroController {
             const livroCriado = await livro.create(livroCompleto);
             res.status(201).json({ message: "criado com sucesso", livro: livroCriado });
         } catch (error) {
-            res.status(500).json({ message: `$(erro.message) - falha ao cadastrar livro `});
+            res.status(500).json({ message: `$(error.message) - falha ao cadastrar livro `});
         }
      }
 
